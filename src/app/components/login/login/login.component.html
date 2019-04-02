@@ -1,0 +1,28 @@
+<br />
+
+<div class="container">
+  <div class="col-lg-6">
+    <label>Username</label>
+    <input type="text" class="form-control" [(ngModel)]="username" />
+  </div>
+  <div class="col-lg-6">
+    <label>Password</label>
+    <input type="password" class="form-control" [(ngModel)]="password" />
+  </div>
+
+  <hr />
+
+  <div *ngIf="error">
+    <div class="alert alert-danger">That's an error! :D</div>
+
+  </div>
+
+  <div class="col-lg-6">
+    <input class="btn btn-success" type="button" value="Login" (click)="login()">
+  </div>
+
+
+
+
+
+</div>
